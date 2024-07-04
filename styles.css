@@ -1,0 +1,122 @@
+/* Google Fonts */
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    direction: rtl;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #0041C2;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    position: relative;
+}
+
+header .logo {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Main Content Styles */
+main {
+    padding: 1em;
+}
+
+section {
+    margin-bottom: 2em;
+    background: white;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #0041C2;
+    margin-bottom: 0.5em;
+}
+
+input, button {
+    display: block;
+    margin-top: 1em;
+    width: 100%;
+    padding: 0.5em;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+button {
+    background-color: #0041C2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #002080;
+}
+
+/* Social Login Buttons */
+.social-login {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.social-btn {
+    background-color: #3b5998;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    width: 48%;
+    font-size: 0.9em;
+}
+
+.social-btn.twitter {
+    background-color: #1da1f2;
+}
+
+.social-btn:hover {
+    opacity: 0.8;
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 0.5em;
+    }
+
+    header .logo {
+        width: 60px;
+    }
+
+    main {
+        padding: 0.5em;
+    }
+
+    section {
+        padding: 0.5em;
+    }
+
+    input, button {
+        font-size: 0.9em;
+    }
+
+    .social-btn {
+        font-size: 0.8em;
+    }
+}
