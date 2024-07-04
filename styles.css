@@ -1,4 +1,3 @@
-/* Google Fonts */
 body {
     font-family: 'Cairo', sans-serif;
     background-color: #f0f0f0;
@@ -64,34 +63,50 @@ button:hover {
     background-color: #002080;
 }
 
-/* Social Login Buttons */
-.social-login {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1em;
-}
-
-.social-btn {
-    background-color: #3b5998;
-    color: white;
-    border: none;
-    padding: 0.5em 1em;
-    cursor: pointer;
-    width: 48%;
-    font-size: 0.9em;
-}
-
-.social-btn.twitter {
-    background-color: #1da1f2;
-}
-
-.social-btn:hover {
-    opacity: 0.8;
-}
-
 /* Hidden Class */
 .hidden {
     display: none;
+}
+
+/* Question and Choices Styles */
+#question {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+#choices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.choice {
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    padding: 1em;
+    margin: 0.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex: 1 1 calc(50% - 1em);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.choice:hover {
+    background-color: #ccc;
+}
+
+/* Making the entire choice div clickable */
+.choice input {
+    display: none;
+}
+
+.choice label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }
 
 /* Responsive Design */
@@ -114,9 +129,5 @@ button:hover {
 
     input, button {
         font-size: 0.9em;
-    }
-
-    .social-btn {
-        font-size: 0.8em;
     }
 }
